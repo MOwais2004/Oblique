@@ -4,7 +4,9 @@ A free website template for creative studios: a curved, draggable wall of work, 
 
 Live: https://mowais2004.github.io/Oblique
 
-https://github.com/MOwais2004/Oblique/blob/main/preview.mp4
+
+https://github.com/user-attachments/assets/1e61a8d2-b37e-41aa-96c8-120ca4a51688
+
 
 Plain HTML, CSS and JavaScript, with no framework, no build step and no dependencies.
 
