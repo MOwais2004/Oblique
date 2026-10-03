@@ -2,7 +2,9 @@
 
 A free website template for creative studios: a curved, draggable wall of work, a page for every project, and Studio, Careers and Contact pages.
 
-https://github.com/user-attachments/assets/your-video-id
+Live: https://mowais2004.github.io/Oblique
+
+https://github.com/MOwais2004/Oblique/blob/main/preview.mp4
 
 Plain HTML, CSS and JavaScript, with no framework, no build step and no dependencies.
 
