@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oblique® — Independent Creative Studio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23000'/%3E%3Cpath d='M24.13 4.53A14 14 0 0 1 10.13 28.77Z' fill='%23fff'/%3E%3Cpath d='M7.87 27.47A14 14 0 0 1 21.87 3.23Z' fill='%23fff'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#000">
+<meta name="description" content="Oblique is an independent creative studio in Lisbon building brands, websites and campaigns for ambitious companies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-view="space">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- Oblique mark: a disc split along an oblique line -->
+  <symbol id="mk" viewBox="0 0 32 32"><path d="M24.13 4.53A14 14 0 0 1 10.13 28.77Z" fill="currentColor"/><path d="M7.87 27.47A14 14 0 0 1 21.87 3.23Z" fill="currentColor"/></symbol>
+  <symbol id="arrow" viewBox="0 0 16 16"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+</svg>
+
+<header class="top">
+  <a class="logo glass" href="#" aria-label="Oblique, home"><svg class="mark" viewBox="0 0 32 32"><path class="a" d="M24.13 4.53A14 14 0 0 1 10.13 28.77Z" fill="currentColor"/><path class="b" d="M7.87 27.47A14 14 0 0 1 21.87 3.23Z" fill="currentColor"/></svg><span>Oblique<sup>®</sup></span></a>
+  <p class="state mono">Oblique is an independent creative studio building brands, websites and campaigns for ambitious companies.</p>
+  <div class="tr glass"><span class="mono clock"><i class="live"></i>Lisbon <span id="clock">--:--</span></span><a class="talk mag" href="#contact"><span class="roll"><span data-t="Let's talk">Let's talk</span></span><i><svg><use href="#arrow"/></svg></i></a></div>
+</header>
+
+<!-- WORK: the bulge grid -->
+<section class="view" data-view="space" aria-label="Selected work. Drag or scroll to explore, click a project to open it.">
+  <canvas id="gl"></canvas>
+</section>
+
+<!-- WORK: list -->
+<section class="view scroll" data-view="index" id="indexv" aria-label="All projects">
+  <div class="ihead"><h1 class="h2">All projects</h1><p class="mono ink2"><span id="icount">16</span> projects · 2024—2026</p></div>
+  <div class="irow ihd mono" id="ihd"><button data-k="i" class="on">No.</button><button data-k="name">Project</button><button data-k="client">Client</button><button data-k="scope">Services</button><button data-k="year">Year</button></div>
+  <div class="ibody" id="ibody"></div>
+</section>
+
+<div class="dock-l glass" id="views" role="tablist" aria-label="Layout">
+  <button role="tab" data-v="space" class="on" aria-label="Grid view"><svg viewBox="0 0 16 16" fill="currentColor"><rect width="7" height="7" rx="1.5"/><rect x="9" width="7" height="7" rx="1.5"/><rect y="9" width="7" height="7" rx="1.5"/><rect x="9" y="9" width="7" height="7" rx="1.5"/></svg></button>
+  <button role="tab" data-v="index" aria-label="List view"><svg viewBox="0 0 16 16" fill="currentColor"><rect y="2" width="16" height="2" rx="1"/><rect y="7" width="16" height="2" rx="1"/><rect y="12" width="16" height="2" rx="1"/></svg></button>
+</div>
+<nav class="dock glass" id="dock" aria-label="Primary">
+  <span class="ind" aria-hidden="true"></span>
+  <a href="#" data-nav="work">Work</a><a href="#studio" data-nav="studio">Studio</a><a href="#careers" data-nav="careers">Careers</a><a href="#contact" data-nav="contact">Contact</a>
+</nav>
+<div class="filter" id="filter">
+  <button class="fbtn glass" aria-expanded="false" aria-controls="fmenu">Filter <b id="fcur">All</b></button>
+  <div class="fmenu glass" id="fmenu"></div>
+</div>
+
+<div class="cursor" id="cursor"></div>
+<div class="toast mono" id="toast" role="status"></div>
+<img class="preview" id="preview" alt="">
+
+<!-- STUDIO -->
+<section class="panel" id="studio" aria-labelledby="studio-h" tabindex="-1">
+  <a class="pclose glass" href="#" aria-label="Close"><svg viewBox="0 0 14 14"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.6"/></svg></a>
+  <div class="eyebrow mono" data-r><span>(01)</span><span>Studio</span></div>
+  <h1 class="h1" id="studio-h" data-split style="max-width:12ch">We design brands people remember.</h1>
+  <div class="facts mono">
+    <div data-r>Founded<b>2015, Lisbon</b></div>
+    <div data-r style="--d:1">Team<b>34 people</b></div>
+    <div data-r style="--d:2">Launches<b>120+ projects</b></div>
+    <div data-r style="--d:3">Recognition<b>19 awards</b></div>
+  </div>
+  <div class="trio gs">
+    <figure data-r><img src="media/p04.webp" alt="Argent Lab bottles" loading="lazy"><figcaption class="mono">Argent Lab — 2026</figcaption></figure>
+    <figure data-r style="--d:1"><img src="media/p01.webp" alt="Maison Aube fabric study" loading="lazy"><figcaption class="mono">Maison Aube — 2026</figcaption></figure>
+    <figure data-r style="--d:2"><img src="media/p07.webp" alt="Lumen Clinic serum" loading="lazy"><figcaption class="mono">Lumen Clinic — 2025</figcaption></figure>
+  </div>
+  <div class="sec">
+    <div class="shead mono"><span>Our belief</span><span>(02)</span></div>
+    <p class="manifesto" id="mani">We believe the best brands feel inevitable. So we work as one small senior team, from the first question to launch day, until strategy, design and code say the same thing in the same voice.</p>
+  </div>
+  <div class="sec">
+    <div class="shead mono"><span>Services</span><span>(03)</span></div>
+    <div class="acc open"><button class="acc-h" aria-expanded="true"><span class="mono muted">01</span><span class="h3">Branding</span><span class="acc-i"></span></button><div class="acc-b"><div><p>Identity systems with a point of view, built to flex from favicon to billboard, and guidelines people actually use.</p><ul class="tags"><li>Strategy</li><li>Naming</li><li>Visual identity</li><li>Packaging</li><li>Guidelines</li></ul></div></div></div>
+    <div class="acc"><button class="acc-h" aria-expanded="false"><span class="mono muted">02</span><span class="h3">Web Design</span><span class="acc-i"></span></button><div class="acc-b"><div><p>Sites and products that feel effortless to use and hard to forget, designed in the browser and tested with real people.</p><ul class="tags"><li>UX &amp; architecture</li><li>Interface design</li><li>Design systems</li><li>Prototyping</li></ul></div></div></div>
+    <div class="acc"><button class="acc-h" aria-expanded="false"><span class="mono muted">03</span><span class="h3">Development</span><span class="acc-i"></span></button><div class="acc-b"><div><p>Fast, accessible front ends, from marketing sites and stores to WebGL worlds, shipped clean and easy to maintain.</p><ul class="tags"><li>Front-end &amp; CMS</li><li>WebGL &amp; motion</li><li>E-commerce</li><li>Web apps</li></ul></div></div></div>
+    <div class="acc"><button class="acc-h" aria-expanded="false"><span class="mono muted">04</span><span class="h3">Marketing</span><span class="acc-i"></span></button><div class="acc-b"><div><p>Campaigns and content that turn attention into customers, with the measurement to prove it.</p><ul class="tags"><li>Campaigns</li><li>Social &amp; content</li><li>Performance &amp; SEO</li><li>Analytics</li></ul></div></div></div>
+  </div>
+  <div class="sec">
+    <div class="shead mono"><span>In numbers</span><span>(04)</span></div>
+    <div class="stats">
+      <div class="stat" data-r><div><b data-count="120+">120+</b><p>Launches across brand, web and campaign work.</p></div><div class="bars" style="--f:.8"></div></div>
+      <div class="stat" data-r style="--d:1"><div><b data-count="11">11</b><p>Years independent, owned by the people who work here.</p></div><div class="bars" style="--f:.55"></div></div>
+      <div class="stat" data-r style="--d:2"><div><b data-count="34">34</b><p>Designers, engineers and strategists in one studio.</p></div><div class="bars" style="--f:.34"></div></div>
+      <div class="stat" data-r style="--d:3"><div><b data-count="92%">92%</b><p>Of clients come back for a second project.</p></div><div class="bars" style="--f:.92"></div></div>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="shead mono"><span>Selected clients</span><span>(05)</span></div>
+    <div class="marquee"><div>
+      <span>Maison Aube</span><span>Glaze</span><span>Galet</span><span>Ambre Parfums</span><span>Meridian</span><span>Hush Audio</span><span>Drop Nº9</span><span>Soie Paris</span>
+      <span aria-hidden="true">Maison Aube</span><span aria-hidden="true">Glaze</span><span aria-hidden="true">Galet</span><span aria-hidden="true">Ambre Parfums</span><span aria-hidden="true">Meridian</span><span aria-hidden="true">Hush Audio</span><span aria-hidden="true">Drop Nº9</span><span aria-hidden="true">Soie Paris</span>
+    </div></div>
+  </div>
+</section>
+
+<!-- CAREERS -->
+<section class="panel" id="careers" aria-labelledby="careers-h" tabindex="-1">
+  <a class="pclose glass" href="#" aria-label="Close"><svg viewBox="0 0 14 14"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.6"/></svg></a>
+  <div class="eyebrow mono" data-r><span>(02)</span><span>Careers</span></div>
+  <h1 class="h1" id="careers-h" data-split style="max-width:11ch">Do the best work of your life.</h1>
+  <div class="facts mono">
+    <div data-r>Open roles<b>5 positions</b></div>
+    <div data-r style="--d:1">Where<b>Lisbon + remote EU</b></div>
+    <div data-r style="--d:2">Process<b>Portfolio + 2 chats</b></div>
+    <div data-r style="--d:3">Questions<b><a class="copy" href="mailto:jobs@oblique.studio" data-copy="jobs@oblique.studio">jobs@oblique.studio</a></b></div>
+  </div>
+  <div class="sec">
+    <div class="shead mono"><span>Open positions</span><span>(05)</span></div>
+    <ul class="roles" id="roles">
+      <li data-r><a href="mailto:jobs@oblique.studio?subject=Senior%20Brand%20Designer" data-img="media/p02.webp"><span class="h3">Senior Brand Designer</span><span class="mono">Lisbon / Hybrid</span><span class="mono">Full-time</span><span class="arr"><svg width="14" height="14"><use href="#arrow"/></svg></span></a></li>
+      <li data-r style="--d:1"><a href="mailto:jobs@oblique.studio?subject=Creative%20Developer%20(WebGL)" data-img="media/p06.webp"><span class="h3">Creative Developer (WebGL)</span><span class="mono">Remote, EU</span><span class="mono">Full-time</span><span class="arr"><svg width="14" height="14"><use href="#arrow"/></svg></span></a></li>
+      <li data-r style="--d:2"><a href="mailto:jobs@oblique.studio?subject=Performance%20Marketing%20Lead" data-img="media/p09.webp"><span class="h3">Performance Marketing Lead</span><span class="mono">Lisbon / Hybrid</span><span class="mono">Full-time</span><span class="arr"><svg width="14" height="14"><use href="#arrow"/></svg></span></a></li>
+      <li data-r style="--d:3"><a href="mailto:jobs@oblique.studio?subject=Motion%20Designer" data-img="media/p08.webp"><span class="h3">Motion Designer</span><span class="mono">Remote</span><span class="mono">Freelance</span><span class="arr"><svg width="14" height="14"><use href="#arrow"/></svg></span></a></li>
+      <li data-r style="--d:4"><a href="mailto:jobs@oblique.studio?subject=Digital%20Producer" data-img="media/p11.webp"><span class="h3">Digital Producer</span><span class="mono">Lisbon</span><span class="mono">Full-time</span><span class="arr"><svg width="14" height="14"><use href="#arrow"/></svg></span></a></li>
+    </ul>
+  </div>
+  <div class="sec">
+    <div class="shead mono"><span>Why Oblique</span><span>(03)</span></div>
+    <div class="stats" style="grid-template-columns:repeat(3,1fr)">
+      <div class="stat" data-r><div><b data-count="4">4</b><p>Day weeks all July and August, every year.</p></div><div class="bars" style="--f:.8"></div></div>
+      <div class="stat" data-r style="--d:1"><div><b data-count="2000€">2000€</b><p>Yearly learning budget. Courses, books, conferences.</p></div><div class="bars" style="--f:.5"></div></div>
+      <div class="stat" data-r style="--d:2"><div><b data-count="4">4</b><p>Paid weeks of sabbatical after four years.</p></div><div class="bars" style="--f:.25"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="panel" id="contact" aria-labelledby="contact-h" tabindex="-1">
+  <a class="pclose glass" href="#" aria-label="Close"><svg viewBox="0 0 14 14"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.6"/></svg></a>
+  <div class="eyebrow mono" data-r><span>(03)</span><span>Contact</span></div>
+  <h1 class="bigtalk fit" id="contact-h" data-r><span><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><use href="#mk"/></svg>Let's talk</span></h1>
+  <div class="cinfo mono">
+    <div data-r>New business<a class="copy" href="mailto:hello@oblique.studio" data-copy="hello@oblique.studio">hello@oblique.studio</a></div>
+    <div data-r style="--d:1">Phone<a class="copy" href="tel:+351912345678" data-copy="+351 912 345 678">+351 912 345 678</a></div>
+    <div data-r style="--d:2">Studio<p>Rua da Boavista 72, Lisboa</p></div>
+  </div>
+  <div class="strip gs" id="strip"></div>
+  <div class="sec form">
+    <div data-r><div class="shead mono" style="border:0;padding:0;margin-bottom:18px"><span>Start a project</span></div><p class="lede">Tell us a little about what you're making. We reply within one working day.</p></div>
+    <form id="form" data-r style="--d:1">
+      <div class="two">
+        <label class="f"><span class="mono muted">Your name</span><input name="name" required autocomplete="name"></label>
+        <label class="f"><span class="mono muted">Email</span><input name="email" type="email" required autocomplete="email"></label>
+      </div>
+      <label class="f"><span class="mono muted">Company</span><input name="company" autocomplete="organization"></label>
+      <fieldset><legend class="mono muted">I'm interested in</legend><div class="opts">
+        <label><input type="checkbox" name="svc" value="Branding"><span>Branding</span></label>
+        <label><input type="checkbox" name="svc" value="Web Design"><span>Web Design</span></label>
+        <label><input type="checkbox" name="svc" value="Development"><span>Development</span></label>
+        <label><input type="checkbox" name="svc" value="Marketing"><span>Marketing</span></label>
+      </div></fieldset>
+      <fieldset><legend class="mono muted">Budget</legend><div class="opts">
+        <label><input type="radio" name="budget" value="Under €20k"><span>&lt; €20k</span></label>
+        <label><input type="radio" name="budget" value="€20k–50k"><span>€20k–50k</span></label>
+        <label><input type="radio" name="budget" value="€50k–100k"><span>€50k–100k</span></label>
+        <label><input type="radio" name="budget" value="€100k+"><span>€100k+</span></label>
+      </div></fieldset>
+      <label class="f"><span class="mono muted">Tell us about the project</span><textarea name="msg" required></textarea></label>
+      <div><button class="talk xl" type="submit"><span class="roll"><span data-t="Send enquiry">Send enquiry</span></span><i><svg><use href="#arrow"/></svg></i></button></div>
+    </form>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section class="panel" id="project" aria-labelledby="proj-h" tabindex="-1">
+  <a class="pclose glass" href="#" aria-label="Close"><svg viewBox="0 0 14 14"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.6"/></svg></a>
+  <div id="proj"></div>
+</section>
+
+<template id="foot">
+  <footer class="foot">
+    <div class="fcta"><h2 class="h2" style="max-width:14ch">Have a project in mind? <span class="muted">Let's make it.</span></h2><a class="talk xl" href="#contact"><span class="roll"><span data-t="Start a project">Start a project</span></span><i><svg><use href="#arrow"/></svg></i></a></div>
+    <div class="fcols">
+      <div><span class="mono">Studio</span>Independent creative studio in Lisbon, working worldwide.</div>
+      <div><span class="mono">Index</span><a href="#">Work</a><a href="#studio">Studio</a><a href="#careers">Careers</a><a href="#contact">Contact</a></div>
+      <div><span class="mono">Services</span><span>Branding</span><span>Web design</span><span>Development</span><span>Marketing</span></div>
+      <div><span class="mono">Contact</span><a class="copy" href="mailto:hello@oblique.studio" data-copy="hello@oblique.studio">hello@oblique.studio</a><span>+351 912 345 678</span><span>Rua da Boavista 72</span></div>
+      <div><span class="mono">Social</span><a href="#contact">Instagram</a><a href="#contact">LinkedIn</a><a href="#contact">Behance</a></div>
+    </div>
+    <p class="flogo fit" aria-hidden="true"><span><svg class="mark" viewBox="0 0 32 32"><use href="#mk"/></svg>Oblique</span></p>
+    <div class="fbot mono"><span>© 2026 Oblique Studio — Lisbon</span><span>Imagery: Unsplash &amp; Pexels contributors</span><button class="totop">Back to top ↑</button></div>
+  </footer>
+</template>
+
+<div class="loader" id="loader">
+  <div id="clips"></div>
+  <div class="lcenter" aria-label="Oblique"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path class="a" d="M24.13 4.53A14 14 0 0 1 10.13 28.77Z" fill="currentColor"/><path class="b" d="M7.87 27.47A14 14 0 0 1 21.87 3.23Z" fill="currentColor"/></svg><span class="lword" id="lword"></span></div>
+  <div class="lfoot mono"><span>Independent creative studio — Lisbon</span><span><span id="count">0</span>%</span></div>
+  <i class="lbar"></i>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
